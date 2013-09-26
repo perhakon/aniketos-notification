@@ -27,7 +27,11 @@ Contributing (guide)
 
 Installation
 ------------
-(15 lines max; if more is needed, split up in sections of the same max. size)
+Notification module bundles are Maven-built, and can be installed in Apache Karaf as features:
+- aniketos-notification-service: Notification module implementation bundle. Provides the notification platform service as a local OSGi service.
+- aniketos-notification-interface: Provides the notification interface and public type classes.
+- aniketos-notification-client: A reference client that consumes notifications from a remote broker.
+- aniketos-notification-trigger: A notification trigger that can replace any environment monitor for testing/demonstration purposes.
 
 Modules, APIs
 -------------
